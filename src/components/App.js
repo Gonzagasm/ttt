@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './Header';
 import Board from './Board';
 import Reset from './Reset';
@@ -27,6 +28,7 @@ function App() {
       setTurn(myjson.turn)
       setValues(myjson.values)
       setMoves(myjson.moves)
+      setLoading(false)
     }
     fetchData();
 
